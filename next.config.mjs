@@ -3,9 +3,9 @@ const isProd = process.env.NODE_ENV === 'production';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/the_hidden_layer' : '',
+  basePath: isProd ? '/the-hidden-layer' : '',
   env: {
-    NEXT_PUBLIC_BASE_PATH: isProd ? '/the_hidden_layer' : '',
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/the-hidden-layer' : '',
   },
   images: {
     unoptimized: true,
